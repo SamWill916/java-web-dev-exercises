@@ -1,4 +1,4 @@
-package exercises;
+package exercises.DataTypes;
 import java.util.Scanner;
 
 public class Alice {
