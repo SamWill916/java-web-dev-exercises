@@ -9,13 +9,17 @@ public class Car {
     private double milesPerGallon;
     private double odometer = 0;
 
-    public Car(String make, String model, int gasTankSize, double milesPerGallon) {
+    //classic car stuff
+    private int modelYear;
+
+    public Car(String make, String model, int gasTankSize, double milesPerGallon, int modelYear) {
         this.make = make;
         this.model = model;
         this.gasTankSize = gasTankSize;
         // Gas tank level defaults to a full tank
         this.gasTankLevel = gasTankSize;
         this.milesPerGallon = milesPerGallon;
+        this.modelYear = modelYear;
     }
 
     public String getMake() {
@@ -84,5 +88,10 @@ public class Car {
         this.gasTankLevel = this.gasTankLevel - gallonsUsed;
         this.odometer += milesAbleToTravel;
     }
-
+public boolean isClassic(){
+        if(this.modelYear < 1970){
+            return true;
+        }
+        return false;
+}
 }

@@ -21,4 +21,8 @@ public class HouseCat extends Cat {
     public String purr() {
         return "I'm a HouseCat";
     }
+
+    public HouseCat(String aName){
+        name = aName;
+    }
 }
