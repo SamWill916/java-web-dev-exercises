@@ -8,11 +8,18 @@ public class Restaurant {
         Menu menu = new Menu();
         menu.addMenuItem(corndog);
         menu.addMenuItem(pizza);
+        System.out.println(menu);
 
         for(MenuItem item: menu.getMenuItems()){
             System.out.println(item.getName());
         }
-        menu.setLastUpdated();
-        System.out.println(menu.getLastUpdated());
+//        menu.setLastUpdated();
+//        System.out.println(menu.getLastUpdated());
+        menu.removeMenuItem("pizza");
+        for(MenuItem item: menu.getMenuItems()){
+            System.out.println(item.getName());
+        }
+
+
     }
 }
