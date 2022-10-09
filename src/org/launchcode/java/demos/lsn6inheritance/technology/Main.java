@@ -1,4 +1,4 @@
-package org.launchcode.java.demos.lsn6inheritance;
+package org.launchcode.java.demos.lsn6inheritance.technology;
 
 public class Main {
     public static void main(String[] args) {
@@ -7,9 +7,9 @@ public class Main {
         Laptop laptop = new Laptop(2000, 8, "HP", true);
         Smartphone smartphone = new Smartphone(512, 4, "Apple", "8675309");
 
-//        computer.makeNoise();
-//        laptop.makeNoise();
-//        smartphone.makeNoise();
+        computer.makeNoise();
+        laptop.makeNoise();
+        smartphone.makeNoise();
 
 
 
